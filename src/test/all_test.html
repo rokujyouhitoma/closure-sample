@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Closure Unit Tests - All JsUnit Tests</title>
+<script src="../goog/base.js"></script>
+<script>
+goog.require('goog.testing.MultiTestRunner');
+</script>
+<script src="all_test.js"></script>
+<script src="_phantomjs/closurelibrary-tap.js"></script>
+<link rel="stylesheet" href="../goog/css/multitestrunner.css" type="text/css" />
+</head>
+<body id="runner">
+<script type="text/javascript">
+var testRunner = new goog.testing.MultiTestRunner();
+testRunner.addTests(tests);
+testRunner.render(document.getElementById('runner'));
+</script>
+</body>
+</html>

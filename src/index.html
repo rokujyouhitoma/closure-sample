@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>r12a</title>
+  <meta name="application-name" content="r12a" />
+  <meta name="application-url" content="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="goog/base.js"></script>
+  <script src="r12a/deps.js"></script>
+  <script src="r12a/init.js"></script>
+</head>
+<body>
+
+<input type="text" id="input" style="width:100%" />
+
+<script>
+/*@cc_on @*/
+/*@if (@_win32)
+    document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+    var script = document.getElementById("__ie_onload");
+    script.onreadystatechange = function() {
+        if (this.readyState == "complete") {
+            initLoad();
+        }
+    };
+/*@end @*/
+if (/WebKit/i.test(navigator.userAgent)) {
+    var _timer = setInterval(function() {
+        if (/loaded|complete/.test(document.readyState)) {
+            clearInterval(_timer);
+            initLoad();
+        }
+    }, 10);
+} else if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", initLoad, false);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#!/bin/sh
+python tools/calcdeps.py \
+-p ../src/goog \
+-p ../src/r12a \
+-i ../src/r12a/init.js \
+-o compiled -c tools/compiler.jar \
+-f --compilation_level=ADVANCED_OPTIMIZATIONS \
+-f --js=../src/goog/deps.js \
+-f --create_source_map=../src/compiled/compiled.map \
+-f --warning_level=VERBOSE > ../src/compiled/compiled.js

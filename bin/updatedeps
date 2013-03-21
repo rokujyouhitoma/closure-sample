@@ -1,0 +1,5 @@
+#!/bin/sh
+python tools/calcdeps.py \
+--dep ../src/goog \
+-p ../src/r12a \
+-o deps > ../src/r12a/deps.js

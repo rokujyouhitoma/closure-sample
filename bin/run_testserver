@@ -1,0 +1,8 @@
+#! /bin/bash
+cd ../src/
+echo '********************************************************************************'
+echo '* all-test: http://localhost:8080/test/all_test.html'
+echo '* stop:     C-c'
+echo '*'
+echo '********************************************************************************'
+python -m SimpleHTTPServer 8080

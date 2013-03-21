@@ -1,0 +1,2 @@
+#!/bin/sh
+phantomjs tools/run_test.js ../src/test/all_test.html

@@ -1,0 +1,4 @@
+#!/bin/sh
+/bin/sh -x lint
+/bin/sh -x updatedeps
+/bin/sh -x compilejs

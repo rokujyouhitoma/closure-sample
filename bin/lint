@@ -1,0 +1,2 @@
+#!/bin/sh
+gjslint --strict -r ../src/r12a
